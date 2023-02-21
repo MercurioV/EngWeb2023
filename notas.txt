@@ -1,0 +1,33 @@
+Manifesto:
+Metadata: yiyulo, data, autor, uc
+Resument: Lista de parrafos
+Lista de resultados: ficheros
+
+OAIS:
+	Productor de la info y el recibidor
+	instancia recibe un sip con esturctura del manifiesto, luego pasa a un aip para guardar la data en memoria, por ultimo mediante un dip
+se envia la data al recibidor esto se hace mediante un administrador.
+
+CSV: la data se separa mediante comas y lineas. La primera linea se usa como los designantes de la data que va luego por debajo.
+tpc1: crar una web, sobre iguana,iogurte,italia, iris
+<html>
+	<head>
+		<titulo>
+		<link -> javascript o stylesheet(css o xml)/>
+	</head>
+	<body>
+	</body>
+</html>
+
+tres tipos de listas en html:
+	nmeradasc<ol> <li> elem1 </li> </ol>
+	descriptivas
+	normales
+links: pointer para acceder a elementos de la web, el destino ha de ser una url
+Elementos blocks: elementos q se tratan como un conjunto
+¨¨ inline: elementos q se tratan individualmente 
+
+
+Dataset 
+id,nome,população,descricião -> ciudade
+ligaçoes id,origem,destino,distancia añadir las uniones que hay entre las ciudades
