@@ -81,6 +81,7 @@ router.get('/alunos/delete/:idAluno', function(req, res, next) {
     })
 });
 
+
 /* GET Student page. */
 router.get('/alunos/deleteConfirm/:idAluno', function(req, res, next) {
   var data = new Date().toISOString().substring(0, 16)
