@@ -60,7 +60,7 @@ router.get('/alunos/edit/:idAluno', function(req, res, next) {
 /* GET Student page. */
 router.post('/alunos/edit/:idAluno', function(req, res, next) {
   var data = new Date().toISOString().substring(0, 16)
-  Aluno.getAluno(req.params.idAluno)
+  Aluno.updateAluno(req.params.idAluno)
     .then(aluno => {
       res.render('updateAlunoConfirm', { a: aluno, d: data });
     })
@@ -68,4 +68,29 @@ router.post('/alunos/edit/:idAluno', function(req, res, next) {
       res.render('error', {error: erro, message: "Erro na obtenção do registo de aluno"})
     })
 });
+
+/* GET Student page. */
+router.get('/alunos/delete/:idAluno', function(req, res, next) {
+  var data = new Date().toISOString().substring(0, 16)
+  Aluno.getAluno(req.params.idAluno)
+    .then(aluno => {
+      res.render('deleteForm', { a: aluno, d: data });
+    })
+    .catch(erro => {
+      res.render('error', {error: erro, message: "Erro na obtenção do registo de aluno"})
+    })
+});
+
+/* GET Student page. */
+router.get('/alunos/deleteConfirm/:idAluno', function(req, res, next) {
+  var data = new Date().toISOString().substring(0, 16)
+  Aluno.deleteAluno(req.params.idAluno)
+    .then(aluno => {
+      res.redirect('/')
+    })
+    .catch(erro => {
+      res.render('error', {error: erro, message: "Erro na obtenção do registo de aluno"})
+    })
+});
+
 module.exports = router;

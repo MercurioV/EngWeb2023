@@ -40,3 +40,14 @@ module.exports.updateAluno = a =>{
         return erro
     })
 }
+
+module.exports.deleteAluno = a =>{
+    return axios.delete('http://localhost:3000/alunos/' + a)
+    .then(resposta => {
+        return resposta.data
+    })
+    .catch(erro => {
+        return erro
+    })
+}
+
