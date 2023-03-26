@@ -3,6 +3,10 @@ var express = require('express');
 var path = require('path');
 var logger = require('morgan');
 
+var mongoose = require('mongoose')
+var mongoDB = 'mongodb://127.0.0.1/EngWeb2023';
+mongoose.connect(mongoDB, {useNewUrlParser:true, useUnifiedTopology:true})
+var db = mongoose.connection
 var indexRouter = require('./routes/index');
 
 var app = express();
