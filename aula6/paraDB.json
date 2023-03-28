@@ -1,0 +1,24 @@
+{
+  "paras": [
+    {
+      "id": "p1",
+      "dataTime": "2023-03-28T09:20",
+      "p": "My first register idea"
+    },
+    {
+      "id": "p2",
+      "dataTime": "2023-03-28T09:20",
+      "p": "My second register idea"
+    },
+    {
+      "id": "p3",
+      "dataTime": "2023-03-28T09:41",
+      "p": "hola"
+    },
+    {
+      "id": "p4",
+      "dataTime": "2023-03-28T09:41",
+      "p": "otra"
+    }
+  ]
+}
